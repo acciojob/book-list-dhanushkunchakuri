@@ -1,16 +1,46 @@
 <!DOCTYPE html>
-
 <html>
-
 <head>
+	<!-- <title>MyBookList</title> -->
 	<link rel="stylesheet" href="styles.css">
 </head>
-
 <body>
-	<!-- the entire body must be written by student -->
-    <script type="text/javascript" src="./script.js">
-</script>
 
+	<h1>MyBookList</h1>
+
+	<div class="form-group">
+		<form id="form">
+			<label for="title">Title</label>
+			<br>
+			<input id="title" />
+			<br>
+			<label for="author">Author</label>
+			<br>
+			<input id="author" />
+			<br>
+			<label for="isbn">ISBN#</label>
+			<br>
+			<input id="isbn" />
+			<br>
+			<button type="submit" id="submit">Add Book</button>
+		</form>
+
+		<br><br>
+
+		<table class="table table-striped" border="1">
+			<thead>
+				<tr>
+					<th>Title</th>
+					<th>Author</th>
+					<th>ISBN#</th>
+					<th></th>
+				</tr>
+			</thead>
+			<tbody id="book-list">
+			</tbody>
+		</table>
+	</div>
+
+	<script src="script.js"></script>
 </body>
-
 </html>
